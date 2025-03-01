@@ -6,7 +6,9 @@ int main() {
 	cout << "Podaj wynik egzaminu (liczba punktow): ";
 	cin >> wynik;
 	
-	if(wynik < 50)
+	if(wynik < 0 || wynik > 100)
+		cout << "Wynik poza zakresem";
+	else if(wynik < 50)
 		cout << "Ocena niedostateczna";
 	else if(wynik < 70)
 		cout << "Ocena dostateczna";
